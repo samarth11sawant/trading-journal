@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Samarth Gold Trading Journal</title>
+<title>Samarth Gold Trading Dashboard</title>
+
 <style>
+
 body{
-font-family: Arial;
+font-family:Arial;
 background:#0f172a;
 color:white;
 text-align:center;
+margin:0;
+}
+
+header{
+background:#020617;
+padding:20px;
+font-size:28px;
+color:gold;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 padding:40px;
 }
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.card h2{
+color:gold;
+}
+
 a{
 color:gold;
-font-size:20px;
+font-size:18px;
 }
+
+footer{
+margin-top:40px;
+padding:20px;
+background:#020617;
+}
+
 </style>
 </head>
 
 <body>
 
-<h1>Samarth Gold Trading Journal</h1>
+<header>
+Samarth Gold Trading Dashboard
+</header>
 
-<p>Tracking my XAUUSD trading performance</p>
+<div class="container">
+
+<div class="card">
+<h2>Total Trades</h2>
+<p>Update from journal</p>
+</div>
+
+<div class="card">
+<h2>Win Rate</h2>
+<p>Update from journal</p>
+</div>
+
+<div class="card">
+<h2>Total Profit</h2>
+<p>Update from journal</p>
+</div>
+
+<div class="card">
+<h2>Best RR</h2>
+<p>1:8</p>
+</div>
+
+</div>
 
 <p>
 <a href="Pro Final Trading Journal.xlsx">
@@ -29,6 +88,9 @@ Open My Trading Journal
 </a>
 </p>
 
-</body>
+<footer>
+XAUUSD Performance Tracker
+</footer>
 
+</body>
 </html>
